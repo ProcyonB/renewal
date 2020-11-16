@@ -13,8 +13,9 @@ $dark-blue: #2A2C35;
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: italic;
+//   font-family: 'Inter', sans-serif;
+//   font-style: italic;
+font-family: 'PT Sans Narrow', sans-serif;
 //   overflow: hidden;
 }
 button{
@@ -37,7 +38,6 @@ a{
     height: 70px;
     font-size: 20px;
     font-weight: 500;
-    font-style: italic;
     text-transform: uppercase;
     border-radius: 10px;
     @media (max-width: 460px){
@@ -101,18 +101,68 @@ a{
         bottom: 7px;
     }
 }
+.for_h2{
+    text-align: center;
+    width: 100%;
+}
+.main-h2 {
+    font-size: 35px;
+    color: $cherry;
+    text-transform: uppercase;
+    align-self: center;
+    position: relative;
+    display: inline-block;
+    border: 1px solid $pink;
+    padding: 8px;
+}
+.main-h2::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 1px solid $pink;
+    transform: rotate(-50deg);
+    right: 5px;
+    top: -20px;
+}
+.social{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $pink;
+    padding: 3px 2px 0 2px;
+    border-radius: 10px;
+    transition: 0.2s;
+   
+    img{
+        width: 25px;
+        height: 25px;
+        margin-bottom: 3px;
+    }
+    
+}
+.social:hover{
+    box-shadow: (0px 0px 36px #E0727F);
+}
+
 // ! hero 
 
 .hero{
     background: linear-gradient(180deg, #FFFBEF 0%, #F5C9BD 67.19%, #E0727F 100%);
     padding: 30px 0 20px 0;
     overflow: hidden;
+    // @media (max-width: 711px){
+    //     background: $beige;
+    // }
     &__container{
         background: url(../img/she-removebg.png) no-repeat top right;
         padding-bottom: 200px;
         
         @media (max-width: 711px){
-            background: none;
+            background: url(../img/she-removebg.png) no-repeat top right;
+            background-size: contain;
             padding-bottom: 10px;
         }
         .nav{
@@ -131,14 +181,13 @@ a{
             background-color: $beige;
             padding: 20px;
             text-align: center;
+            z-index: 40;
             ul{
                 flex-direction: column;
                 height: 80%;
                 overflow: auto;
                 justify-content: space-around;
-                li{
-
-                }
+                
             }
         }
         ul{
@@ -221,6 +270,7 @@ a{
                 background-color: $beige;
                 color: $cherry;
                 transition: 0.3s;
+                border: 1px solid $cherry;
                 @media (max-width: 711px){
                     margin-top: 30px;
                 }
@@ -235,5 +285,87 @@ a{
 }
 
 // ! programms
+
+.programms {
+    margin-top: 50px;
+    padding-top:20px;
+    padding-bottom: 30px;
+    background-color: $beige;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+
+    &_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        border: 1px solid $cherry;
+        border-radius:10px;
+        padding: 15px 15px 15px 15px;
+        @media(max-width: 1200px){
+            // width: 40%;
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+        h4{
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color:$pink;
+            @media(max-width: 705px){
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size: 18px;
+            line-height: 22px;
+            color: $dark-blue;
+            flex-grow: 1;
+            text-align: center;
+            @media(max-width: 705px){
+                font-size: 16px;
+            }
+        }
+        span{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: $pink;
+            margin-bottom: 10px;
+            @media(max-width: 705px){
+                font-size: 16px;
+            }
+        }
+        img:hover{
+            animation: arrow 1.4s linear infinite;
+            cursor: pointer;
+        }
+    }
+
+    &__container {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 1200px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }                   
+    }}
+
+    @keyframes arrow {
+        0% {
+            transform: translateY(-1px);
+        }
+        50% {
+            transform: translateY(5px);
+        }
+        100% {
+            transform: translateY(10px);
+        }
+    }
+
 
 
