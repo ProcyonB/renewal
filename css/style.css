@@ -111,6 +111,7 @@ a {
 .for_h2 {
   text-align: center;
   width: 100%;
+  padding: 10px 0;
 }
 
 .main-h2 {
@@ -643,4 +644,74 @@ a {
   font-size: 30px;
   text-transform: uppercase;
   color: #2A2C35;
+}
+
+.food {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.food .main-h2 {
+  margin-bottom: 80px;
+}
+
+.food__card {
+  margin-bottom: 30px;
+}
+
+.food__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 710px) {
+  .food__card-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 10px 0;
+  }
+}
+
+.food__card-item p {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #2A2C35;
+  max-width: 70%;
+}
+
+@media (max-width: 710px) {
+  .food__card-item p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.beige {
+  background-color: #FFFBEF;
+}
+
+.pink {
+  background: rgba(224, 114, 127, 0.46);
+}
+
+.food-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.food-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
