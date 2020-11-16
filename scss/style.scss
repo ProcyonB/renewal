@@ -161,7 +161,7 @@ a{
         padding-bottom: 200px;
         
         @media (max-width: 711px){
-            background: url(../img/she-removebg.png) no-repeat top right;
+            // background: url(../img/she-removebg.png) no-repeat top right;
             background-size: contain;
             padding-bottom: 10px;
         }
@@ -293,7 +293,9 @@ a{
     background-color: $beige;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
-
+    &_card:hover{
+        box-shadow: 0px 0px 18px #E0727F;
+    }
     &_card {
         display: flex;
         flex-direction: column;
@@ -303,6 +305,7 @@ a{
         border: 1px solid $cherry;
         border-radius:10px;
         padding: 15px 15px 15px 15px;
+        transition: 0.2s;
         @media(max-width: 1200px){
             // width: 40%;
             margin-bottom: 20px;
@@ -367,5 +370,99 @@ a{
         }
     }
 
+
+// !about
+
+.container-slider {
+    width: 45%;
+    // margin: auto;
+  }
+  
+  .slider {
+    min-width: 0;
+    max-width: 45%;
+    max-height: 80%;
+    position: relative;
+    @media(max-width: 650px){
+        max-width: 30%;
+    }
+    @media(max-width: 600px){
+        max-width: 50%;
+    }
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  .slider .slick-prev, .slider .slick-next{
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+  }
+.about_me {
+    margin-top: 50px;
+
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            @media(max-width: 600px){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+		&__text {
+            max-width: 50%;
+            @media(max-width: 650px){
+                max-width: 65%;
+            }
+            p{
+                font-size: 25px;
+                text-transform: uppercase;
+                color: $dark-blue;
+                @media(max-width: 890px){
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                @media(max-width: 600px){
+                    text-align: center;
+                }
+                @media(max-width: 500px){
+                    font-style: 18px;
+                }
+                
+            }
+            .dots{
+                text-align: center;
+            }
+            span{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background-color: $pink; 
+                margin-right: 5px;
+            }
+            .right{
+                text-align: right;
+                @media(max-width: 650px){
+                    text-align: left;
+                }
+                @media(max-width: 600px){
+                    text-align: center;
+                }
+            }
+        }
+        .for_h2 h2{
+            font-size: 30px;
+            text-transform: uppercase;
+            color: $dark-blue;
+        }
+}
 
 
