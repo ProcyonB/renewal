@@ -1,6 +1,6 @@
 $beige: #FFFBEF;
 $pink: #E0727F;
-$cherry: #430F15;
+$cherry: #451614;
 $dark-blue: #2A2C35;
 
 *,
@@ -605,4 +605,93 @@ a{
   left: 100%;
 }
 
+// !slim
 
+.progr-desc{
+    margin-top: 100px;
+    h2{
+        margin-bottom: 100px;
+    }
+    
+}
+.program_description{
+    padding: 0 80px 0 80px;
+    @media(max-width: 900px){
+        padding: 0 10px 0 10px;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 600px){
+            flex-direction: column;
+        }
+        .variants-btn{
+            background-color: $cherry;
+            color: $beige;
+            font-size: 18px;
+            width: 250px;
+            transition: 0.3s;
+            @media(max-width: 600px){
+                margin-bottom: 10px;
+            }
+        }
+        .variants-btn:hover{
+            cursor: pointer;
+            box-shadow: (0px 0px 36px #E0727F);
+        }
+    }
+    &__main-description{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        @media(max-width: 600px){
+            flex-direction: column-reverse;
+        }
+        .price{
+            p{
+                font-weight: bold;
+                font-size: 50px;
+                color: $cherry;
+                text-transform: uppercase;
+                margin-top: 0;
+                
+            }
+            .connect-btn{
+                background: linear-gradient(98.28deg, #FFFBEF 0%, #F5C9BD 67.19%, #E0727F 100%);
+                color: $cherry;
+                transition: 0.3s;
+            }
+            .connect-btn:hover{
+                cursor: pointer;
+                box-shadow: (0px 0px 36px #E0727F);
+            }
+        }
+        .programm-list{
+            max-width: 50%;
+            @media(max-width: 600px){
+                max-width: 80%;
+            }
+            li{
+                position: relative;
+                list-style: none;
+                font-size: 24px;
+                text-transform: uppercase;
+                color: $dark-blue;
+                margin-bottom: 10px;
+                @media(max-width: 900px){
+                    font-size: 20px;
+                }
+            }
+            li:before{
+                position: absolute;
+                content: "";
+                background-color: $pink;
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                top: 10px;
+                left: -15px;
+            }
+        }
+    }
+}
