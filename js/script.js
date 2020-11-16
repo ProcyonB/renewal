@@ -10,4 +10,8 @@ $(".slider").slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+$(".slider-comments").slick({
+  cssEase: "ease",
+  swipeToSlide: true,
+});
 // new WOW().init();

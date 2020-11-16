@@ -399,7 +399,7 @@ a{
   .slick-list {
     overflow: hidden;
   }
-  .slider .slick-prev, .slider .slick-next{
+  .slick-prev, .slick-next{
       display: none;
       visibility: hidden;
       opacity: 0;
@@ -498,7 +498,40 @@ a{
             }
         }
     }
+    .to_recieps{
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 435px){
+            flex-direction: column;
+        }
+        p{
+            font-weight: 600;
+            font-size: 32px;
+            text-transform: uppercase;
+            color: $dark-blue;
+            @media(max-width: 540px){
+                font-size: 25px;
+            }
+        }
+        img:hover{
+            cursor: pointer;
+            animation: arrow-right 1.4s linear infinite;
+        }
+    }
 }
+@keyframes arrow-right{
+    0% {
+        transform: translateX(-1px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
 .beige {
     background-color:$beige;
 }
@@ -516,6 +549,60 @@ a{
         display: block;
     }
 }
+// !comments
 
+.comments{
+    margin-top: 70px;
+    background-color: $beige;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    padding: 70px 0 70px 0;
+    h2{
+        margin-bottom: 70px;
+    }
+    .slider__item{
+        display: flex;
+        justify-content: space-around;
+        img{
+            height: auto;
+            width: 100%;
+        }
+        p{
+            font-size: 22px;
+            color: $dark-blue;
+            text-transform: uppercase;
+        }
+    }
+}
+.slider-comments{
+    min-width: 0;
+    max-width:60%;
+    // max-height: 80%;
+    position: relative;
+}
+.slider-comments .slick-arrow {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    top: 25%;
+    // z-index: 99;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s;
+  }
+.slider-comments .slick-prev{
+    background: url("../img/left-arrow.svg") no-repeat center center;
+    background-size: contain;
+  border: none;
+  right: 100%;
+
+}
+.slider-comments .slick-next{
+    background: url("../img/right-arrow.svg") no-repeat center center;
+    background-size: contain;
+  border: none;
+  left: 100%;
+}
 
 
