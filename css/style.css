@@ -992,3 +992,142 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.cook {
+  background: url(../img/food-bg.png) center fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.r-btn {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 835px) {
+  .r-btn {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.faq {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background: url(../img/vector.svg) center no-repeat;
+}
+
+.faq .faq-container {
+  margin-top: 70px;
+  padding: 0 40px 0 40px;
+}
+
+@media (max-width: 560px) {
+  .faq .faq-container {
+    text-align: center;
+  }
+}
+
+.faq .faq-container h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #2A2C35;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .faq .faq-container h3 {
+    font-size: 25px;
+  }
+}
+
+.faq .faq-container p {
+  font-size: 25px;
+  color: #2A2C35;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .faq .faq-container p {
+    font-size: 20px;
+  }
+}
+
+.faq .faq-container h4 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #2A2C35;
+  text-align: center;
+}
+
+.faq .faq-container .connect-btn {
+  background: linear-gradient(98.28deg, #FFFBEF 0%, #F5C9BD 67.19%, #E0727F 100%);
+  color: #451614;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.faq .faq-container .connect-btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 36px #E0727F;
+          box-shadow: 0px 0px 36px #E0727F;
+}
+
+.faq .faq-container .for_btn {
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+@media (max-width: 580px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer span, footer p, footer a {
+  font-size: 20px;
+  color: #2A2C35;
+  margin: 0;
+}
+
+footer span {
+  max-width: 40%;
+  margin-left: 10px;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 580px) {
+  footer .logo {
+    margin-bottom: 25px;
+  }
+}
