@@ -33,7 +33,7 @@ $("#with_slim").on("click", function () {
 </ul>`);
 });
 $("#without_slim").on("click", function () {
-  $("#slim-price").html(`900 &#8381;`);
+  $("#slim-price").html(`899 &#8381;`);
   $("#slim_list").html(`<ul>
   <li>меню, рассчитанное под твои показатели</li>
   <li>похудение от -3кг</li>
@@ -53,7 +53,7 @@ $("#with_weight").on("click", function () {
 </ul>`);
 });
 $("#without_weight").on("click", function () {
-  $("#weight-price").html(`900 &#8381;`);
+  $("#weight-price").html(`899 &#8381;`);
   $("#weight_list").html(`<ul>
   <li>меню, рассчитанное под твои показатели</li>
   <li>набор веса от 2 кг</li>
