@@ -79,3 +79,10 @@ $("#without_training").on("click", function () {
   ).html(`<p class="about_training">одна тренировка из пакета: Жиросжигающая-интенсивная, На верхнюю часть тела, На нижнюю часть тела,
   Растяжка, 10.000 шагов дома </p>`);
 });
+
+$(".for_connect").on("click", function () {
+  $(".popup").css({ left: 0 });
+});
+$(".close").on("click", function () {
+  $(".popup").css({ left: "100%" });
+});
