@@ -20,7 +20,9 @@ $(".slider-comments").slick({
   cssEase: "ease",
   swipeToSlide: true,
 });
-// new WOW().init();
+
+new WOW().init();
+
 $("#with_slim").on("click", function () {
   $("#slim-price").html(`1400 &#8381;`);
   $("#slim_list").html(`<ul>
